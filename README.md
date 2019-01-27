@@ -16,12 +16,12 @@ We fetch the data from firebase database. The root key of our JSON structure is 
 
 
 DatabaseReference ref = FirebaseDatabase.getInstance().getReference("BLENDS").child(blend1_Choice);
-                    ref.addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            String mixStr = (String) dataSnapshot.child(blend2_Choice).getValue();
-                            mixText.setText(mixStr);        /// for the final output value text.
-                        }
+ref.addListenerForSingleValueEvent(new ValueEventListener() {
+	@Override
+	public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+		String mixStr = (String) dataSnapshot.child(blend2_Choice).getValue();
+		mixText.setText(mixStr);        /// for the final output value text.
+	}
                         
                         
 
