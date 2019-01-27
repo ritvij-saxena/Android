@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminConsole">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:alpha="0.3"
+        app:srcCompat="@drawable/hul" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="159dp"
+        android:background="#FFFFFF"
+        android:ellipsize="end"
+        android:alpha="0.7"
+        android:text="ADD / UPDATE VALUES"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-85dp"
+        android:text="Notify All"
+        android:textStyle="bold"
+        android:background="#FFF"
+        android:alpha="0.7" />
+
+    <Button
+        android:id="@+id/buttonClearNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Delete broadcast messages"
+        android:textStyle="bold"
+        android:background="#FFF"
+        android:alpha="0.7"/>
+
+
+</RelativeLayout>
